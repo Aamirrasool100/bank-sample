@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Modak&family=Montserrat:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+</head>
+<style>
+     body{
+         height:100vh;
+         background-image: linear-gradient(to right,rgb(243, 150, 10),rgb(143, 105, 3));
+     }
+</style>
+<body> 
+    
+    <main class="section-accounts">
+        <div class="accounts">
+            <h2 class="accounts__heading">Start your dummy accounts process</h2>
+            <p class="accounts__text">Enter the amount ou want to start with</p>
+            <form  class="accounts__form" action="/amount" method="post">
+             <input class="accounts__input" type="text" name="amount" placeholder="Enter Amount" required autofocus>
+             <button class="accounts__btn" type="submit">Send</button>
+            </form>
+            <p class="flash">{{message}}</p> 
+        </div>
+    <div class="navigation">
+     <ul class="nav">
+         <li class="nav__check">Check Balance</li>
+         <li class="nav__debit">Debit money</li>
+         <li class="credit">Credit money</li>
+     </ul>
+    </div>
+    </main>
+</body>
+</html>
